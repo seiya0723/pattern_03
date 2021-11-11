@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Hello World test!!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <main class="container">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div>コントローラ</div>
+
+
+                <div id="init_control" class="control">
+                    <div>色: <input class="color" type="color" name="color"></div>
+                    <div>本数: <input class="number" type="range" name="number" min="1" max="10" step="1"></div>
+                    <input class="btn btn-danger" type="button" value="削除">
+                </div>
+
+
+                <div id="control_area">
+                    <!--TODO:ここに模様の向き、糸の太さの指定を-->
+
+                    <!--ここにページを読み込みした時に2個追加する。-->
+
+                </div>
+
+                <div>糸の太さ: <input type="range" name="size" min="1" max="10" step="1"></div>
+                <div>方向: <input type="checkbox"></div>
+
+                <input id="control_add" class="btn btn-success" type="button" value="追加">
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <div>プレビュー</div>
+                <canvas id="canvas" width="300" height="300" style="border:solid 1px black;"></canvas>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
+
